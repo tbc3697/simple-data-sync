@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: data-sync
+
+# Mysql数据库
+
+datasource:
+  master:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.33.100:3306/upex_data?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT&allowMultiQueries=true
+    username: devall
+    password: dwdecv07c4b05f224e6829dc0f69
+    data-source-name: upex_data
+    # mybatis mapper
+    package:
+  agency:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.33.100:3306/agency_system?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT&allowMultiQueries=true
+    username: devall
+    password: dwdecv07c4b05f224e6829dc0f69
+    data-source-name: anency
+  user:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.33.100:3306/upex_user?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT&allowMultiQueries=true
+    username: devall
+    password: dwdecv07c4b05f224e6829dc0f69
+    data-source-name: anency
+  exchange:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.33.100:3306/exchange?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT&allowMultiQueries=true
+    username: devall
+    password: dwdecv07c4b05f224e6829dc0f69
+    data-source-name: exchange
+  otc:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.33.100:3306/upex_otc?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT&allowMultiQueries=true
+    username: devall
+    password: dwdecv07c4b05f224e6829dc0f69
+    data-source-name: upex_otc
+
+
+
+logging.level:
+  com.upex.data.sync.mapper: debug

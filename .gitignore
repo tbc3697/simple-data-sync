@@ -1,0 +1,47 @@
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+*.project
+*.classpath
+*.prefs
+
+*/.idea/*
+*/.idea/
+/.idea/*
+.idea/
+*.iml
+
+
+*/.settings/*
+*/.settings/
+/.settings/*
+.settings/
+
+*/target/*
+*/target/
+/target/*
+/target/
+
+*/overlays/*
+*/overlays/
+/overlays/*
+overlays/
+
+*/m2e-wtp/*
+*/m2e-wtp/
+/m2e-wtp/*
+m2e-wtp/
+
+
+.DS_Store
+
+*/rebel.xml
